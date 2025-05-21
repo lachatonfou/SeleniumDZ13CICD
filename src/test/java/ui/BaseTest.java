@@ -19,6 +19,7 @@ public class BaseTest {
     void setup() {
         //driver = new ChromeDriver();
         initDriver();
+
         driver.get(BASE_URL);
         driver.manage().window().maximize();
     }

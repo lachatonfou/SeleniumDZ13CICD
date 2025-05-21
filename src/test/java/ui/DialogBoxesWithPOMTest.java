@@ -71,10 +71,10 @@ public class DialogBoxesWithPOMTest extends BaseTestWithPOM{
     void proverkaLaunchModal() {
         dialogBoxesPage.getLaunchModalButton().click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(dialogBoxesPage.getLaunchModalButton()));
-        assertEquals("This is the modal body", dialogBoxesPage.getLaunchModal().getText() );
+        wait.until(ExpectedConditions.visibilityOf(dialogBoxesPage.getLaunchModal()));
+        assertEquals("This is the modal body", dialogBoxesPage.getLaunchModal().getText());
 
         dialogBoxesPage.getLaunchModalSaveButton().click();
-        assertEquals("You chose: Save changes", dialogBoxesPage.getLaunchModalFinal().getText() );
+        assertEquals("You chose: Save changes", dialogBoxesPage.getLaunchModalFinal().getText());
     }
 }

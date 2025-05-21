@@ -21,6 +21,7 @@ public class BaseTestWithPOM {
     void setup() {
         //driver = new ChromeDriver();
         initDriver();
+
         driver.manage().window().maximize();
     }
 
